@@ -1,3 +1,7 @@
+find work -type file -name '*.json' -exec php transcript.php {} \;
+find . -type file -name '*.txt' | xargs grep '検索ワード'
+
+
 # aws-transcribe-transcript
 This is a simple utility script to convert the Amazon Transcribe .json transcript into a more readable transcript. This uses PHP, but if you're interested, there's [a Python port](https://github.com/trhr/aws-transcribe-transcript) of this repo.
 
