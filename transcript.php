@@ -40,7 +40,7 @@ foreach ($items as $item) {
     $time = number_format($item->start_time, 3, '.', '');
   }
   elseif ($item->type != 'punctuation') {
-    $line .= ' ' . $content;
+    $line .= '' . $content;
   }
 }
 // Record the last line since there was no speaker change.
